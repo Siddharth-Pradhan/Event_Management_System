@@ -107,7 +107,7 @@ const EventDetail = () => {
           {/* Banner */}
           <div className="event-detail-banner">
             {event.bannerImage ? (
-              <img src={`http://localhost:5000${event.bannerImage}`} alt={event.title} />
+              <img src={event.bannerImage} alt={event.title} />
             ) : (
               <div className="event-detail-banner-placeholder">
                 <span>{event.category?.icon || '🎪'}</span>

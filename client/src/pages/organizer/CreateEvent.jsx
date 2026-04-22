@@ -59,7 +59,7 @@ const CreateEvent = () => {
         tags: event.tags?.join(', ') || '',
       });
       if (event.bannerImage) {
-        setBannerPreview(`http://localhost:5000${event.bannerImage}`);
+        setBannerPreview(event.bannerImage);
       }
     } catch (error) {
       toast.error('Event not found');

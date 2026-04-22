@@ -147,7 +147,7 @@
 
 /* Initially hidden for stagger animations */
 [class*="stagger-"] {
-  opacity: 0;
+  animation-fill-mode: both;
 }
 
 /* ---- Page Transition ---- */

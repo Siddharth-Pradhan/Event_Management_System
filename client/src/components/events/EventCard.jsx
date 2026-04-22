@@ -25,7 +25,7 @@ const EventCard = ({ event, index = 0 }) => {
       <div className="event-card-image">
         {event.bannerImage ? (
           <img
-            src={`http://localhost:5000${event.bannerImage}`}
+            src={event.bannerImage}
             alt={event.title}
             loading="lazy"
           />
