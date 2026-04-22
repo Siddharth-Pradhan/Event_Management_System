@@ -99,12 +99,13 @@ cd client && npm install && cd ..
 ### 3. Configure environment
 Create a `.env` file inside the `server/` directory:
 ```env
-PORT=5000
+PORT=5001
 MONGODB_URI=mongodb://localhost:27017/campus_events
 JWT_SECRET=your_jwt_secret_key_here
 JWT_REFRESH_SECRET=your_refresh_secret_key_here
 JWT_EXPIRE=7d
 JWT_REFRESH_EXPIRE=30d
+CLIENT_URL=http://localhost:5173
 NODE_ENV=development
 ```
 
@@ -127,7 +128,7 @@ This creates demo users, categories, and sample events:
 npm run dev
 ```
 - **Frontend:** http://localhost:5173
-- **Backend API:** http://localhost:5000
+- **Backend API:** http://localhost:5001
 
 ## 📡 API Endpoints
 
